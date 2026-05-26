@@ -1,0 +1,9 @@
+/* Language toggle button */
+#lang-toggle {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  line-height: 1.5rem;
+  white-space: nowrap;
+}

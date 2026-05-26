@@ -4,26 +4,34 @@
 
 main:
 - name: Home
+  identifier: home
   url: /
   weight: 10
 - name: About
+  identifier: about
   url: /about/
   weight: 20
 - name: Experience
+  identifier: experience
   url: /experience/
   weight: 30
 - name: Skills
+  identifier: skills
   url: /skills/
   weight: 40
 - name: Projects
+  identifier: projects
   url: /projects/
   weight: 50
 - name: Hobbies
+  identifier: hobbies
   url: /hobbies/
   weight: 60
 - name: Blog
+  identifier: blog
   url: /blog/
   weight: 70
 - name: Contact
+  identifier: contact
   url: /contact/
   weight: 80
