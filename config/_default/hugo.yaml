@@ -2,8 +2,8 @@
 ## CHANGE THESE
 ############################
 
-baseURL: 'https://chrede88.github.io/qubt'
-title: 'Qubt Theme'
+baseURL: 'https://yoshiouchi.github.io/'
+title: 'Yoshi | Solutions Engineer'
 
 ############################
 ## MISC
@@ -11,7 +11,7 @@ title: 'Qubt Theme'
 
 enableEmoji: true
 disableKinds: ['taxonomy', 'term']
-languageCode: 'en-us'
+languageCode: 'en'
 enableRobotsTXT: true
 
 markup:

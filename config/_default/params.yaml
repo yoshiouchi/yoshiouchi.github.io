@@ -3,69 +3,24 @@
 ############################
 
 author:
-  name: "Qubt"
+  name: "Yoshi"
   image: author.jpeg
-  greeting: "A personal blog theme for Hugo :evergreen_tree:"
-  icon: ":wave:"
+  greeting: "Solutions Engineer @ GitHub 🇯🇵🇦🇺"
+  icon: "👋"
 
 ############################
 ## Links
 ############################
 
 links:
-  - github: https://github.com/chrede88/qubt
-  - facebook: https://github.com/chrede88/qubt
-  # - x-twitter:
-  # - mastodon:
-  # - linkedin: 
-  # - instagram:
-  # - reddit: 
-  # - telegram: 
-  # - whatsapp: 
-  # - signal: 
-  # - codepen: 
-  # - dev: 
-  # - email: 
-  # - website:
-  # - link: 
-  # - discord:
-  # - orcid:
-  # - slack:
-  # - stack-overflow: 
-  # - twitch: 
-  # - patreon: 
-  # - soundcloud:
-  # - dribbble: 
-  # - stack-exchange: 
-  # - tiktok: 
-  # - youtube:
-  # - keybase: 
-  # - flickr: 
-  # - tumblr:
-  # - kickstarter: 
-  # - snapchat:
-  # - bluesky: 
-  # - bitbucket:
-  # - bandcamp: 
-  # - etsy: 
-  # - spotify: 
-  # - pinterest: 
-  # - strava: 
-  # - untappd: 
-  # - skype: 
-  # - medium: 
-  # - foursquare: 
-  # - apple: 
-  # - amazon: 
-  # - google: 
-  # - paypal: 
-  # - windows: 
+  - github: https://github.com/yoshiouchi
+  - linkedin: https://www.linkedin.com/in/yoshiouchi
 
 ###############################
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: "Qubt Theme"
-description: "Demo site build with Qubt & Hugo"
+title: "Yoshi | Solutions Engineer"
+description: "Personal portfolio and blog of Yoshi — Solutions Engineer at GitHub"
 images:
   - thumbnail.jpeg
