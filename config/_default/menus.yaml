@@ -6,9 +6,24 @@ main:
 - name: Home
   url: /
   weight: 10
-- name: Blog
-  url: /blog/
-  weight: 20
 - name: About
   url: /about/
+  weight: 20
+- name: Experience
+  url: /experience/
   weight: 30
+- name: Skills
+  url: /skills/
+  weight: 40
+- name: Projects
+  url: /projects/
+  weight: 50
+- name: Hobbies
+  url: /hobbies/
+  weight: 60
+- name: Blog
+  url: /blog/
+  weight: 70
+- name: Contact
+  url: /contact/
+  weight: 80
