@@ -8,5 +8,8 @@
   "nav.projects": "プロジェクト",
   "nav.hobbies": "趣味",
   "nav.blog": "ブログ",
-  "nav.contact": "お問い合わせ"
+  "nav.contact": "お問い合わせ",
+  "experience.title": "職歴",
+  "experience.current": "現職",
+  "experience.region": "アジア太平洋地域"
 }

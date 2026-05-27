@@ -8,5 +8,8 @@
   "nav.projects": "Projects",
   "nav.hobbies": "Hobbies",
   "nav.blog": "Blog",
-  "nav.contact": "Contact"
+  "nav.contact": "Contact",
+  "experience.title": "Work Experience",
+  "experience.current": "Current",
+  "experience.region": "APAC Region"
 }
