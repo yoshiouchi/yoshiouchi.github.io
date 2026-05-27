@@ -11,5 +11,12 @@
   "nav.contact": "Contact",
   "experience.title": "Work Experience",
   "experience.current": "Current",
-  "experience.region": "APAC Region"
+  "experience.region": "APAC Region",
+  "hobbies.title": "Hobbies",
+  "hobbies.coffee": "Kalita Wave dripper, specialty beans, and a morning ritual I take way too seriously. Always chasing that perfect pour.",
+  "hobbies.gym": "Strength training — nothing fancy, just consistency and progressive overload. Squats are non-negotiable.",
+  "hobbies.sports": "Love watching both. Shohei Ohtani fan since day one — the guy just doesn't stop. Rugby's my go-to for weekend watching.",
+  "hobbies.travel": "Qantas points, credit card strategy, and way too much time on OzBargain. Getting business class on economy effort is the real hobby.",
+  "hobbies.homelab": "Proxmox cluster, Kubernetes nodes, private cloud experiments. Breaking things at home so I don't break them at work.",
+  "hobbies.dora": "14-year-old dog and the real boss of the house. Everything else revolves around her schedule."
 }
