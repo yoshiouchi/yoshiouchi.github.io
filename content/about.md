@@ -1,14 +1,15 @@
 ---
-# don't change
 type: misc
-
-# change these
-jobTitle: Blogger
-name: John Doe
+name: Yoshi
+jobTitle: Solutions Engineer III @ GitHub
 bio: true
-icon: ":coffee:"
+icon: "☕"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat enim. Ut cursus magna sed luctus auctor. Sed eu augue dignissim, lobortis ipsum eu, dictum nisi. [Integer varius](https://lipsum.com) ex maximus quam lobortis accumsan. Morbi mollis vulputate metus, aliquam feugiat arcu porta a. Quisque id justo ultricies, lacinia elit quis, pulvinar odio. Fusce feugiat at velit vitae lobortis. Nulla fringilla metus et sem mattis posuere.
+I'm Yoshi — a Solutions Engineer III at GitHub based in Sydney, Australia. I work across the APAC region helping organisations adopt GitHub Copilot and GitHub Advanced Security (GHAS) to ship better software, faster. Being bilingual in Japanese and English means I often bridge the gap between GitHub's platform capabilities and the needs of customers throughout Japan and the broader Asia-Pacific.
 
-Nulla pellentesque quam sit amet est posuere, tincidunt auctor ligula bibendum. Donec dapibus lacinia nibh, convallis ultrices enim laoreet et. Duis auctor, lectus nec vehicula suscipit, sapien erat pellentesque augue, pulvinar tempus sapien leo sit amet erat. Proin porta, mauris vitae aliquet consectetur, erat eros maximus turpis, at suscipit nibh urna id leo. Nunc commodo sed diam ut aliquet. Duis eros mi, ullamcorper sit amet ex id, aliquet dignissim libero. Fusce at turpis eget nisl feugiat cursus eget vitae elit. Integer auctor enim vel orci fringilla facilisis. Praesent ac euismod tellus.
+Before joining GitHub I was a Customer Solutions Engineer at Sysdig, where I focused on the APAC market with a particular emphasis on Japanese enterprise customers. That role deepened my expertise in Kubernetes, container security, and cloud-native infrastructure — skills I still draw on daily when helping teams secure and scale their development workflows.
+
+My background sits at the intersection of developer experience and platform security. Whether I'm running a hands-on workshop on AI-assisted coding, architecting a code-scanning rollout for a large financial institution, or troubleshooting a complex CI/CD pipeline, I'm happiest when I can turn a customer's pain point into a working solution they're excited about.
+
+When I'm not working you'll usually find me with a cup of coffee, tinkering with side projects, or exploring everything Sydney has to offer.
