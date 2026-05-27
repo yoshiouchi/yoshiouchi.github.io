@@ -1,4 +1,4 @@
-module github.com/chrede88/qubtTemplate
+module github.com/yoshiouchi/yoshiouchi.github.io
 
 go 1.26.3
 

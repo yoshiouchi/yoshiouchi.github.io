@@ -2,17 +2,14 @@
 ## CHANGE THESE
 ############################
 
-baseURL: 'https://yoshiouchi.github.io/'
-title: 'Yoshi | Solutions Engineer'
+baseURL: "https://yoshiouchi.github.io/yoshiouchi.github.io"
+title: yoshiouchi.github.io
 
 ############################
 ## MISC
 ############################
 
 enableEmoji: true
-disableKinds: ['taxonomy', 'term']
-languageCode: 'en'
+disableKinds: ["taxonomy", "term"]
+languageCode: "en-us"
 enableRobotsTXT: true
-
-markup:
-  _merge: deep
