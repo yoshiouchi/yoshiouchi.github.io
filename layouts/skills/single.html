@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <div class="mx-auto mt-12 flex max-w-(--breakpoint-lg) flex-col px-4">
+    <h1 class="mb-10 text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+      <span data-i18n="skills.title">{{ .Title | emojify }}</span>
+    </h1>
+
+    <div class="skills-grid space-y-8">
+      {{ range .Params.categories }}
+        {{ $catKey := .key }}
+        {{ $i18nKey := printf "skills.%s" $catKey }}
+        <section>
+          <h2 class="mb-4 text-xl font-bold text-slate-600 dark:text-slate-300">
+            <span data-i18n="{{ $i18nKey }}">{{ $catKey }}</span>
+          </h2>
+          <div class="flex flex-wrap gap-2">
+            {{ range .skills }}
+              <span class="skill-pill skill-pill--{{ $catKey }}">{{ . }}</span>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

@@ -11,5 +11,11 @@
   "nav.contact": "お問い合わせ",
   "experience.title": "職歴",
   "experience.current": "現職",
-  "experience.region": "アジア太平洋地域"
+  "experience.region": "アジア太平洋地域",
+  "skills.title": "スキル＆技術スタック",
+  "skills.cloud": "クラウド＆インフラ",
+  "skills.security": "セキュリティ",
+  "skills.cicd": "CI/CD＆自動化",
+  "skills.languages": "言語＆ツール",
+  "skills.soft": "ソフトスキル"
 }
