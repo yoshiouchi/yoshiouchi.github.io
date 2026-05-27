@@ -37,3 +37,46 @@
 .experience-timeline h2:first-of-type {
   margin-top: 0;
 }
+
+/* Skills pills */
+.skill-pill {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  background-color: #e2e8f0; /* slate-200 */
+  color: #334155; /* slate-700 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .skill-pill {
+    background-color: #334155; /* slate-700 */
+    color: #e2e8f0; /* slate-200 */
+  }
+}
+
+.skill-pill--cloud {
+  background-color: #dbeafe; color: #1e40af;
+}
+.skill-pill--security {
+  background-color: #fce7f3; color: #9d174d;
+}
+.skill-pill--cicd {
+  background-color: #d1fae5; color: #065f46;
+}
+.skill-pill--languages {
+  background-color: #fef3c7; color: #92400e;
+}
+.skill-pill--soft {
+  background-color: #ede9fe; color: #5b21b6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .skill-pill--cloud { background-color: #1e3a5f; color: #93c5fd; }
+  .skill-pill--security { background-color: #4a1942; color: #f9a8d4; }
+  .skill-pill--cicd { background-color: #064e3b; color: #6ee7b7; }
+  .skill-pill--languages { background-color: #78350f; color: #fcd34d; }
+  .skill-pill--soft { background-color: #3b0764; color: #c4b5fd; }
+}
