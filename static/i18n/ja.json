@@ -17,12 +17,18 @@
   "skills.security": "セキュリティ",
   "skills.cicd": "CI/CD＆自動化",
   "skills.languages": "言語＆ツール",
-  "skills.soft": "ソフトスキル"
+  "skills.soft": "ソフトスキル",
   "hobbies.title": "趣味",
   "hobbies.coffee": "カリタウェーブで毎朝ドリップしてる。スペシャルティ豆にこだわりすぎて、もはや沼。完璧な一杯を追い求める日々。",
   "hobbies.gym": "筋トレ一筋。特別なことはしてない、ただ継続と漸進性過負荷。スクワットだけは絶対サボらない。",
   "hobbies.sports": "ラグビーも野球も観るのが好き。大谷翔平は初日からのファン — あの人マジで止まらない。週末はラグビー観戦が定番。",
   "hobbies.travel": "カンタスポイント、クレカ戦略、OzBargainに費やす時間が多すぎる。エコノミーの努力でビジネスクラスに乗るのが本当の趣味。",
   "hobbies.homelab": "Proxmoxクラスター、Kubernetesノード、プライベートクラウドの実験。仕事で壊さないために、家で壊してる。",
-  "hobbies.dora": "14歳の犬、家の本当のボス。他の全部はドラのスケジュール次第。"
+  "hobbies.dora": "14歳の犬、家の本当のボス。他の全部はドラのスケジュール次第。",
+  "contact.title": "お問い合わせ",
+  "contact.location_label": "所在地:",
+  "contact.location": "シドニー、オーストラリア",
+  "contact.availability": "APACのエンタープライズセキュリティや開発者ツールについてのご相談をお待ちしています。",
+  "contact.copy": "コピー",
+  "contact.copied": "コピーしました！"
 }
