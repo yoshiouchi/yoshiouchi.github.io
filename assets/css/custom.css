@@ -7,3 +7,33 @@
   line-height: 1.5rem;
   white-space: nowrap;
 }
+
+/* Experience timeline */
+.experience-timeline h2 {
+  position: relative;
+  margin-top: 2rem;
+  padding-top: 0.25rem;
+}
+
+.experience-timeline h2::before {
+  content: "";
+  position: absolute;
+  left: -2.35rem;
+  top: 0.6rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #475569; /* slate-600 */
+  border: 2px solid #cbd5e1; /* slate-300 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .experience-timeline h2::before {
+    background-color: #94a3b8; /* slate-400 */
+    border-color: #475569; /* slate-600 */
+  }
+}
+
+.experience-timeline h2:first-of-type {
+  margin-top: 0;
+}
