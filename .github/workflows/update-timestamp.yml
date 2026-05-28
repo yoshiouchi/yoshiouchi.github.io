@@ -1,0 +1,36 @@
+name: Update last-active timestamp
+
+on:
+  schedule:
+    # Monday 09:00 AEST = Sunday 23:00 UTC
+    - cron: '0 23 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-timestamp:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+
+      - name: Update timestamp
+        run: |
+          MONTH_YEAR=$(date -u +'%B %Y')
+          NEW_VALUE="Last active: ${MONTH_YEAR}"
+          sed -i "s/^description: .*/description: \"${NEW_VALUE}\"/" config/_default/params.yaml
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add config/_default/params.yaml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update last-active timestamp [skip ci]"
+            git push
+          fi

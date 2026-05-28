@@ -1,5 +1,8 @@
 # yoshiouchi.github.io
 
+[![Build & Deploy](https://github.com/yoshiouchi/yoshiouchi.github.io/actions/workflows/buildDeploy.yaml/badge.svg)](https://github.com/yoshiouchi/yoshiouchi.github.io/actions/workflows/buildDeploy.yaml)
+[![Update Timestamp](https://github.com/yoshiouchi/yoshiouchi.github.io/actions/workflows/update-timestamp.yml/badge.svg)](https://github.com/yoshiouchi/yoshiouchi.github.io/actions/workflows/update-timestamp.yml)
+
 Please follow the instructions below to finish the setup of your new Qubt site.
 
 ## Installation
@@ -36,15 +39,13 @@ Replace X,Y & Z with the corresponding version numbers. You can find the release
 ---
 
 ## Deploy on Github Pages
-You can very easily deploy your site using Github Pages. Included in this template is a Github Action workflow that will build and deploy your site to Github Pages automatically :+1:
-
-You can find the workflow here `.github/deploymentWorkflow/buildDeploy.yml`. To use this, move it to `.github/workflows/`.
+You can very easily deploy your site using Github Pages. The Github Action workflow at `.github/workflows/buildDeploy.yaml` will build and deploy your site automatically :+1:
 
 The workflow is already set up and ready to go, but go through it and spend some time to understand what's going on. Otherwise, it'll always be this black box of magic that you can't fix when it breaks!
 
-Last step: Go to Settings -> Pages -> Build and deployment -> Set the Source to "Github Actions".
+Go to Settings -> Pages -> Build and deployment -> Set the Source to "Github Actions".
 
 Next time you publish a release this workflow will build and deploy your site :tada:
 
 Your site will be published to the following URL:
-`https://yoshiouchi.github.io/yoshiouchi.github.io`
+`https://yoshiouchi.github.io/`
