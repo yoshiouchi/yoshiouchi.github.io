@@ -26,5 +26,11 @@
   "hobbies.sports": "Love watching both. Shohei Ohtani fan since day one — the guy just doesn't stop. Rugby's my go-to for weekend watching.",
   "hobbies.travel": "Qantas points, credit card strategy, and way too much time on OzBargain. Getting business class on economy effort is the real hobby.",
   "hobbies.homelab": "Proxmox cluster, Kubernetes nodes, private cloud experiments. Breaking things at home so I don't break them at work.",
-  "hobbies.dora": "14-year-old dog and the real boss of the house. Everything else revolves around her schedule."
+  "hobbies.dora": "14-year-old dog and the real boss of the house. Everything else revolves around her schedule.",
+  "contact.title": "Get in Touch",
+  "contact.location_label": "Location:",
+  "contact.location": "Sydney, Australia",
+  "contact.availability": "Open to conversations about APAC enterprise security and developer tooling.",
+  "contact.copy": "Copy",
+  "contact.copied": "Copied!"
 }

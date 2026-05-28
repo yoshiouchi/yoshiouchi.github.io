@@ -66,9 +66,35 @@
     applyTranslations();
   }
 
+  // Email obfuscation: decode base64 email and wire copy button
+  function initEmailObfuscation() {
+    document.querySelectorAll(".email-obfuscated").forEach((el) => {
+      const encoded = el.getAttribute("data-email");
+      if (!encoded) return;
+      const decoded = atob(encoded);
+      el.textContent = decoded;
+
+      const btn = el.parentElement.querySelector(".copy-email-btn");
+      if (btn) {
+        btn.addEventListener("click", () => {
+          navigator.clipboard.writeText(decoded).then(() => {
+            const original = btn.textContent;
+            btn.textContent = translations["contact.copied"] || "Copied!";
+            btn.classList.add("copied");
+            setTimeout(() => {
+              btn.textContent = original;
+              btn.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      }
+    });
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+    document.addEventListener("DOMContentLoaded", () => { init(); initEmailObfuscation(); });
   } else {
     init();
+    initEmailObfuscation();
   }
 })();

@@ -26,5 +26,11 @@
   "hobbies.sports": "ラグビーも野球も観るのが好き。大谷翔平は初日からのファン — あの人マジで止まらない。週末はラグビー観戦が定番。",
   "hobbies.travel": "カンタスポイント、クレカ戦略、OzBargainに費やす時間が多すぎる。エコノミーの努力でビジネスクラスに乗るのが本当の趣味。",
   "hobbies.homelab": "Proxmoxクラスター、Kubernetesノード、プライベートクラウドの実験。仕事で壊さないために、家で壊してる。",
-  "hobbies.dora": "14歳の犬、家の本当のボス。他の全部はドラのスケジュール次第。"
+  "hobbies.dora": "14歳の犬、家の本当のボス。他の全部はドラのスケジュール次第。",
+  "contact.title": "お問い合わせ",
+  "contact.location_label": "所在地:",
+  "contact.location": "シドニー、オーストラリア",
+  "contact.availability": "APACのエンタープライズセキュリティや開発者ツールについてのご相談をお待ちしています。",
+  "contact.copy": "コピー",
+  "contact.copied": "コピーしました！"
 }

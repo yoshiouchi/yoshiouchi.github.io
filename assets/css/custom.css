@@ -81,6 +81,81 @@
   .skill-pill--soft { background-color: #3b0764; color: #c4b5fd; }
 }
 
+/* Contact page */
+.contact-details {
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.contact-item a {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .contact-item a {
+    color: #a5b4fc;
+  }
+}
+
+.contact-availability {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #4f46e5;
+  background-color: #f1f5f9;
+  border-radius: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .contact-availability {
+    background-color: #1e293b;
+    border-left-color: #a5b4fc;
+  }
+}
+
+.copy-email-btn {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background-color: #f8fafc;
+  color: #334155;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.copy-email-btn:hover {
+  background-color: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.copy-email-btn.copied {
+  background-color: #d1fae5;
+  border-color: #6ee7b7;
+  color: #065f46;
+}
+
+@media (prefers-color-scheme: dark) {
+  .copy-email-btn {
+    background-color: #1e293b;
+    border-color: #475569;
+    color: #e2e8f0;
+  }
+  .copy-email-btn:hover {
+    background-color: #334155;
+    border-color: #64748b;
+  }
+  .copy-email-btn.copied {
+    background-color: #064e3b;
+    border-color: #6ee7b7;
+    color: #6ee7b7;
 /* Project cards */
 .project-grid {
   display: grid;
