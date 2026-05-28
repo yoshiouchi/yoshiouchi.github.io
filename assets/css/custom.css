@@ -1,14 +1,86 @@
-/* Language toggle button */
-#lang-toggle {
-  cursor: pointer;
-  border: none;
-  background: none;
-  padding: 0;
-  line-height: 1.5rem;
-  white-space: nowrap;
+/* ============================================================
+   Custom Properties — Teal accent palette
+   ============================================================ */
+:root {
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --accent-subtle: #ccfbf1;
+  --accent-text: #115e59;
+  --accent-border: #99f6e4;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
 }
 
-/* Experience timeline */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #2dd4bf;
+    --accent-hover: #5eead4;
+    --accent-subtle: #134e4a;
+    --accent-text: #99f6e4;
+    --accent-border: #0f766e;
+    --surface: #1e293b;
+    --surface-alt: #0f172a;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --border: #334155;
+    --border-strong: #475569;
+  }
+}
+
+/* Qubt also uses .dark class for toggled dark mode */
+.dark {
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-subtle: #134e4a;
+  --accent-text: #99f6e4;
+  --accent-border: #0f766e;
+  --surface: #1e293b;
+  --surface-alt: #0f172a;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-strong: #475569;
+}
+
+/* ============================================================
+   Navbar — thin top accent border
+   ============================================================ */
+section.mx-auto {
+  border-top: 3px solid var(--accent);
+}
+
+/* ============================================================
+   Language toggle button
+   ============================================================ */
+#lang-toggle {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0.25rem 0.625rem;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+#lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ============================================================
+   Experience timeline
+   ============================================================ */
 .experience-timeline h2 {
   position: relative;
   margin-top: 2rem;
@@ -23,22 +95,17 @@
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
-  background-color: #475569; /* slate-600 */
-  border: 2px solid #cbd5e1; /* slate-300 */
-}
-
-@media (prefers-color-scheme: dark) {
-  .experience-timeline h2::before {
-    background-color: #94a3b8; /* slate-400 */
-    border-color: #475569; /* slate-600 */
-  }
+  background-color: var(--accent);
+  border: 2px solid var(--accent-border);
 }
 
 .experience-timeline h2:first-of-type {
   margin-top: 0;
 }
 
-/* Skills pills */
+/* ============================================================
+   Skills pills — accent-themed
+   ============================================================ */
 .skill-pill {
   display: inline-block;
   padding: 0.375rem 0.875rem;
@@ -46,31 +113,35 @@
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25rem;
-  background-color: #e2e8f0; /* slate-200 */
-  color: #334155; /* slate-700 */
+  background-color: var(--accent-subtle);
+  color: var(--accent-text);
+  transition: background-color 0.15s, transform 0.15s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .skill-pill {
-    background-color: #334155; /* slate-700 */
-    color: #e2e8f0; /* slate-200 */
-  }
+.skill-pill:hover {
+  transform: translateY(-1px);
 }
 
+/* Category variants — tinted accent shades */
 .skill-pill--cloud {
-  background-color: #dbeafe; color: #1e40af;
+  background-color: #dbeafe;
+  color: #1e40af;
 }
 .skill-pill--security {
-  background-color: #fce7f3; color: #9d174d;
+  background-color: #fce7f3;
+  color: #9d174d;
 }
 .skill-pill--cicd {
-  background-color: #d1fae5; color: #065f46;
+  background-color: #d1fae5;
+  color: #065f46;
 }
 .skill-pill--languages {
-  background-color: #fef3c7; color: #92400e;
+  background-color: #fef3c7;
+  color: #92400e;
 }
 .skill-pill--soft {
-  background-color: #ede9fe; color: #5b21b6;
+  background-color: #ede9fe;
+  color: #5b21b6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,7 +152,15 @@
   .skill-pill--soft { background-color: #3b0764; color: #c4b5fd; }
 }
 
-/* Contact page */
+.dark .skill-pill--cloud { background-color: #1e3a5f; color: #93c5fd; }
+.dark .skill-pill--security { background-color: #4a1942; color: #f9a8d4; }
+.dark .skill-pill--cicd { background-color: #064e3b; color: #6ee7b7; }
+.dark .skill-pill--languages { background-color: #78350f; color: #fcd34d; }
+.dark .skill-pill--soft { background-color: #3b0764; color: #c4b5fd; }
+
+/* ============================================================
+   Contact page
+   ============================================================ */
 .contact-details {
   margin-top: 1.5rem;
 }
@@ -93,29 +172,21 @@
 }
 
 .contact-item a {
-  color: #4f46e5;
+  color: var(--accent);
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .contact-item a {
-    color: #a5b4fc;
-  }
+.contact-item a:hover {
+  color: var(--accent-hover);
 }
 
 .contact-availability {
   margin-top: 1.5rem;
   padding: 0.75rem 1rem;
-  border-left: 3px solid #4f46e5;
-  background-color: #f1f5f9;
+  border-left: 3px solid var(--accent);
+  background-color: var(--surface-alt);
   border-radius: 0.25rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .contact-availability {
-    background-color: #1e293b;
-    border-left-color: #a5b4fc;
-  }
 }
 
 .copy-email-btn {
@@ -123,40 +194,28 @@
   padding: 0.25rem 0.75rem;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border-strong);
   border-radius: 0.375rem;
-  background-color: #f8fafc;
-  color: #334155;
+  background-color: var(--surface);
+  color: var(--text-secondary);
   cursor: pointer;
   transition: background-color 0.15s, border-color 0.15s;
 }
 
 .copy-email-btn:hover {
-  background-color: #e2e8f0;
-  border-color: #94a3b8;
+  background-color: var(--accent-subtle);
+  border-color: var(--accent);
 }
 
 .copy-email-btn.copied {
-  background-color: #d1fae5;
-  border-color: #6ee7b7;
-  color: #065f46;
+  background-color: var(--accent-subtle);
+  border-color: var(--accent);
+  color: var(--accent-text);
 }
 
-@media (prefers-color-scheme: dark) {
-  .copy-email-btn {
-    background-color: #1e293b;
-    border-color: #475569;
-    color: #e2e8f0;
-  }
-  .copy-email-btn:hover {
-    background-color: #334155;
-    border-color: #64748b;
-  }
-  .copy-email-btn.copied {
-    background-color: #064e3b;
-    border-color: #6ee7b7;
-    color: #6ee7b7;
-/* Project cards */
+/* ============================================================
+   Project cards — accent hover effect
+   ============================================================ */
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -180,23 +239,20 @@
   flex-direction: column;
   padding: 1.5rem;
   border-radius: 0.75rem;
-  border: 1px solid #e2e8f0;
-  background-color: #ffffff;
-  transition: box-shadow 0.2s ease;
+  border: 1px solid var(--border);
+  border-top: 3px solid transparent;
+  background-color: var(--surface);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.12);
+  transform: translateY(-2px);
 }
 
-@media (prefers-color-scheme: dark) {
-  .project-card {
-    border-color: #334155;
-    background-color: #1e293b;
-  }
-  .project-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  }
+.dark .project-card:hover {
+  box-shadow: 0 4px 16px rgba(45, 212, 191, 0.1);
 }
 
 .project-card__header {
@@ -209,13 +265,7 @@
 .project-card__title {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #1e293b;
-}
-
-@media (prefers-color-scheme: dark) {
-  .project-card__title {
-    color: #f1f5f9;
-  }
+  color: var(--text-primary);
 }
 
 .project-card__link {
@@ -224,11 +274,12 @@
   gap: 0.25rem;
   font-size: 0.75rem;
   font-weight: 500;
-  color: #3b82f6;
+  color: var(--accent);
   text-decoration: none;
 }
 
 .project-card__link:hover {
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
@@ -238,29 +289,16 @@
   font-weight: 500;
   padding: 0.125rem 0.5rem;
   border-radius: 9999px;
-  background-color: #f1f5f9;
-  color: #64748b;
-}
-
-@media (prefers-color-scheme: dark) {
-  .project-card__private {
-    background-color: #334155;
-    color: #94a3b8;
-  }
+  background-color: var(--surface-alt);
+  color: var(--text-muted);
 }
 
 .project-card__desc {
   flex: 1;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: #475569;
+  color: var(--text-secondary);
   margin-bottom: 1rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .project-card__desc {
-    color: #cbd5e1;
-  }
 }
 
 .project-card__tags {
@@ -276,25 +314,12 @@
   border-radius: 9999px;
   font-size: 0.75rem;
   font-weight: 500;
-  background-color: #e2e8f0;
-  color: #334155;
-}
-
-@media (prefers-color-scheme: dark) {
-  .project-tag {
-    background-color: #334155;
-    color: #e2e8f0;
-  }
+  background-color: var(--accent-subtle);
+  color: var(--accent-text);
 }
 
 .project-card__status {
   font-size: 0.75rem;
-  color: #64748b;
+  color: var(--text-muted);
   margin: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .project-card__status {
-    color: #94a3b8;
-  }
 }
