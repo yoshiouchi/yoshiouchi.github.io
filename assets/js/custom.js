@@ -18,6 +18,12 @@
         el.textContent = translations[key];
       }
     });
+    document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-html");
+      if (translations[key] !== undefined) {
+        el.innerHTML = translations[key];
+      }
+    });
   }
 
   async function setLanguage(lang) {
