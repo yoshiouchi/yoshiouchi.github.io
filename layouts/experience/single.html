@@ -1,11 +1,11 @@
 {{ define "main" }}
   <div class="mx-auto mt-12 flex max-w-(--breakpoint-lg) flex-col px-4">
-    <h1 class="mb-10 text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+    <h1 class="mb-10 text-4xl font-extrabold text-slate-700 dark:text-slate-200" data-i18n="experience.page_title">
       {{ .Title | emojify }}
     </h1>
 
     <div class="experience-timeline relative border-l-2 border-slate-300 pl-8 dark:border-slate-600">
-      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert dark:text-slate-200">
+      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert dark:text-slate-200" data-i18n-html="experience.content">
         {{ .Content }}
       </span>
     </div>
