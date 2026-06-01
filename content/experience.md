@@ -9,7 +9,7 @@ type: experience
 - **Region:** APAC
 - **Focus:** GitHub Copilot, GitHub Advanced Security (GHAS)
 - **Key activities:** Customer demos, PoCs, enterprise accounts, bilingual EN/JP support
-- **Notable:** First solo GHAS deal (Paysauce, NZ); PoC sessions for EstimateOne
+- **Notable:** First solo GHAS deal (NZ enterprise customer); PoC sessions for Australian enterprise accounts
 
 ## Sysdig — Customer Solutions Engineer
 
