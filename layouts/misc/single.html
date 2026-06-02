@@ -48,10 +48,10 @@
     <article>
       {{ if .Params.bio }}
         <h1 class="mb-4 text-4xl font-extrabold text-slate-700 dark:text-slate-200" data-i18n="about.title">Biography</h1>
-        <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden" data-i18n="about.bio">
-          {{ .Content }}
-        </span>
       {{ end }}
+      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
+        {{ .Content }}
+      </span>
     </article>
   </div>
 {{ end }}
