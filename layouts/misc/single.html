@@ -1,5 +1,6 @@
 {{ define "main" }}
   <div class="mx-auto mb-2 mt-12 flex max-w-(--breakpoint-xl) flex-col items-center justify-center">
+    {{ if ne .Params.show_author false }}
     {{/* Add image and title */}}
     {{ $image := resources.GetMatch (print "**" .Site.Params.Author.image) }}
     {{ $name := .Params.name | default .Site.Params.Author.name }}
@@ -42,6 +43,7 @@
         {{ end }}
       {{ end }}
     </div>
+    {{ end }}
   </div>
 
   <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-lg) px-4">
