@@ -1,6 +1,7 @@
 ---
 title: Hobbies
 type: misc
+show_author: false
 ---
 
 ## ☕ Coffee

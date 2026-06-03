@@ -1,6 +1,7 @@
 ---
 # don't change
 type: misc
+show_author: false
 
 # change these
 jobTitle: Blogger
